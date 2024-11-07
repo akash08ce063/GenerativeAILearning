@@ -1,0 +1,2 @@
+# Facebook AI Similarity Search (FAISS)
+1. [Medium - Using LLaMA 2.0, FAISS and LangChain for Question-Answering on Your Own Data](https://medium.com/@murtuza753/using-llama-2-0-faiss-and-langchain-for-question-answering-on-your-own-data-682241488476)
