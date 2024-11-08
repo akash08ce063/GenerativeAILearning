@@ -1,7 +1,7 @@
 # References
 
 ## Fine Tuning
-1. [Hugging Face Official - Supervised Fine-Tuning Trainer by Hugging Face](https://huggingface.co/docs/trl/main/en/sft_trainer)
+1. [Hugging Face - Supervised Fine-Tuning Trainer](https://huggingface.co/docs/trl/main/en/sft_trainer)
 
 2. [Medium - LoRA for Fine-Tuning LLMs explained with codes and example](https://medium.com/data-science-in-your-pocket/lora-for-fine-tuning-llms-explained-with-codes-and-example-62a7ac5a3578)
 
