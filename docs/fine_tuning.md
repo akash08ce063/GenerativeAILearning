@@ -19,7 +19,7 @@
 1. [QLORA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/pdf/2305.14314)
 
 
-## Information
+## Supervised Finetuning Details
 
 Fine-tuning is a crucial aspect of the machine learning training process. Often, there are multiple tasks at hand, and we need to fine-tune our base model to adapt to these specific tasks.
 
