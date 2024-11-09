@@ -29,7 +29,7 @@ To address this, we can use a strategy called Parameter-Efficient Fine-Tuning (P
 
 In the following sections, we'll explore different examples of how PEFT can be applied to various tasks.
 
-**Text Generation Task Fine-tuning**
+**1) Text Generation Task Fine-tuning**
 
 For fine-tuning a model on text generation tasks, we can leverage Hugging Face's tools effectively. Specifically, we can use a pre-trained LLAMA model along with Parameter-Efficient Fine-Tuning (PEFT) techniques. The setup involves defining a PEFT configuration and utilizing the SFTTrainer class, which is a subclass of Hugging Face's main Trainer class.
 
