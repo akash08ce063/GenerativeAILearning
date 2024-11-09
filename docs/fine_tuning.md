@@ -64,3 +64,30 @@ now, we use the name of field "text" in SFTTrainer argument for training purpose
 
 
 **IMPORTANT** - Essentially language mode tranining just take TEXT , now it is matter of how you format the text that defines different tasks
+
+so, basically we have three options for the datasets, 
+
+1) Select the dataset format recommended by hugging face
+https://huggingface.co/docs/trl/en/sft_trainer#dataset-format-support
+
+![image](https://github.com/user-attachments/assets/16426ef0-502b-4673-b052-3f4dbdd91a1a)
+
+where SFTTrainer internally call Tokenizer's apply_chat_template method to convert to text like below 
+
+![image](https://github.com/user-attachments/assets/b9048acb-c03d-4367-80a6-9b8b0e33f0d6)
+
+2) Provide a dataset containing only **text column**
+
+![image](https://github.com/user-attachments/assets/da9e168a-a65a-4791-a456-7ae5d88ba797)
+
+
+3) Have a two to three columns of data, but provide a formatting function which essentially combine multiple column in single
+   text field
+
+   ![image](https://github.com/user-attachments/assets/0cbb7af0-7fd9-4965-ba5f-4788a86411c0)
+
+   Below format is new, never tried but should work fine
+
+   ![image](https://github.com/user-attachments/assets/6f867d93-c81c-48e9-9e0d-86ed679b3f95)
+
+
