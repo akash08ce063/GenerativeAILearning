@@ -91,3 +91,10 @@ where SFTTrainer internally call Tokenizer's apply_chat_template method to conve
    ![image](https://github.com/user-attachments/assets/6f867d93-c81c-48e9-9e0d-86ed679b3f95)
 
 
+
+**2) Classification Task**
+Reference way can be used for [LLM Classification With Zero shot](https://stackoverflow.com/questions/76372007/trying-to-install-guanaco-pip-install-guanaco-for-a-text-classification-model/76372390#76372390) 
+[LLM Classification With Trainer](https://github.com/NielsRogge/Transformers-Tutorials/blob/master/BERT/Fine_tuning_BERT_(and_friends)_for_multi_label_text_classification.ipynb)
+   
+
+
