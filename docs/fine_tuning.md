@@ -98,4 +98,8 @@ Reference way can be used for
 2. [LLM Classification With Trainer](https://github.com/NielsRogge/Transformers-Tutorials/blob/master/BERT/Fine_tuning_BERT_(and_friends)_for_multi_label_text_classification.ipynb)
 3. [Best Classification example exactly resembling above text generation fine tuning](https://www.datacamp.com/tutorial/fine-tuning-llama-3-1)
 
+**3) Regression Task**
+Generally LLM used for text related tasks, but it might/can be adapt to regression scenario by putting Linear layer on top on BERT model, 
+[Linear regression using BERT](https://github.com/tomerlieber/Multi-Label-Emotion-Regression/blob/main/Emotion%20Regression%20using%20BERT.ipynb)
+
 
