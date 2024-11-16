@@ -50,8 +50,40 @@ few_shot_prompt_template = FewShotPromptTemplate(
     suffix=suffix,
     input_variables=["query"],
     example_separator="\n\n"
-)```
+)
 
 query = "What is the meaning of life?"
 
 print(few_shot_prompt_template.format(query=query))
+
+```
+
+
+
+
+### Stop Criteria
+
+Defining stopping criteria is the most essential thing to define to tell the model where to stop text generation, below is an example of 
+```
+# Define custom stopping criteria
+class OneLineStoppingCriteria(StoppingCriteria):
+    def __init__(self, stop_token_ids, max_new_tokens = 50):
+        self.stop_token_ids = stop_token_ids
+        self.max_new_tokens = max_new_tokens
+        self.token_count = 0
+
+    def __call__(self, input_ids: torch.LongTensor, scores: torch.FloatTensor, **kwargs) -> bool:
+        if any(token_id in input_ids[0][-len(self.stop_token_ids):] for token_id in self.stop_token_ids):
+            return True
+        self.token_count +=1
+        if self.token_count >= self.max_new_tokens:
+            return True
+        return False       
+        
+stop_tokens = ["###", "\n\n", "User:"]
+stop_token_ids = [tokenizer.encode(token, add_special_tokens=False)[0] for token in stop_tokens]
+
+# Initialize custom stopping criteria
+stopping_criteria = StoppingCriteriaList([OneLineStoppingCriteria(stop_token_ids)])
+
+```
