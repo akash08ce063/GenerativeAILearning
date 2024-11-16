@@ -139,7 +139,7 @@ peft_config = LoraConfig(
 
 # Set training parameters
 
-# Set training parameters
+# Set training parameters (DEPERECATED, RECOMMENDED TO USE SFTCONFIG )
 training_arguments = TrainingArguments(
     output_dir=output_dir,
     num_train_epochs=num_train_epochs,
