@@ -63,7 +63,8 @@ print(few_shot_prompt_template.format(query=query))
 
 ### Stop Criteria
 
-Defining stopping criteria is the most essential thing to define to tell the model where to stop text generation, below is an example of 
+Defining stopping criteria is the most essential thing to define to tell the model where to stop text generation, below is an example of stopping generation where it encounter "User:" 
+word otherwise it will keep generating the examples similar to few shot prompting
 ```
 # Define custom stopping criteria
 class OneLineStoppingCriteria(StoppingCriteria):
