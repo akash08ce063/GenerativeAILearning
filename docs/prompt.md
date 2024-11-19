@@ -88,3 +88,10 @@ stop_token_ids = [tokenizer.encode(token, add_special_tokens=False)[0] for token
 stopping_criteria = StoppingCriteriaList([OneLineStoppingCriteria(stop_token_ids)])
 
 ```
+
+### Prompt Techniques from LLAMA papers
+
+![image](https://github.com/user-attachments/assets/496645ad-4ac0-4e75-9b05-89970990bd35)
+
+Guidelines from META - https://www.llama.com/docs/how-to-guides/prompting/
+
