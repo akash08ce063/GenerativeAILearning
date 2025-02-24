@@ -27,6 +27,8 @@ However, fully fine-tuning the entire model comes with challenges. It is resourc
 
 To address this, we can use a strategy called Parameter-Efficient Fine-Tuning (PEFT). This approach leverages techniques like LoRA (Low-Rank Adaptation) or QLoRA, which introduce small adapter layers on top of existing model components such as multi-head attention, query, and key weights. These adapters add new parameters specifically for the task at hand, while keeping the original model weights frozen. Essentially, you're training only these additional layers, making the process more efficient and preserving the original knowledge of the model.
 
+And there is a recent popular way of fine tuning the model is using unsloth, checkout this repository https://github.com/unslothai/unsloth
+
 In the following sections, we'll explore different examples of how PEFT can be applied to various tasks.
 
 **1) Text Generation Task Fine-tuning**
@@ -63,7 +65,7 @@ now, we use the name of field "text" in SFTTrainer argument for training purpose
 ![image](https://github.com/user-attachments/assets/a9c20cc6-b9c6-4b7e-a80e-318e04248b60)
 
 
-**IMPORTANT** - Essentially language mode tranining just take TEXT , now it is matter of how you format the text that defines different tasks
+**IMPORTANT** - Essentially language mode tranining just take TEXT , now it is matter of how you format the text that defines different tasks, now generally when you are performing a finetuning on the base models, you are free to use any chat template or format for dataset and alpaca from stanford is popular choice. But beware, when finetuning the instruct based model, please follow exactly the model template as it is otherwise it will confuse the model.
 
 so, basically we have three options for the datasets, 
 
@@ -72,7 +74,7 @@ https://huggingface.co/docs/trl/en/sft_trainer#dataset-format-support
 
 ![image](https://github.com/user-attachments/assets/16426ef0-502b-4673-b052-3f4dbdd91a1a)
 
-where SFTTrainer internally call Tokenizer's apply_chat_template method to convert to text like below 
+where SFTTrainer internally call Tokenizer's apply_chat_template method to convert to text like below and you don't need to worry about the formatting of token part. 
 
 ![image](https://github.com/user-attachments/assets/b9048acb-c03d-4367-80a6-9b8b0e33f0d6)
 
@@ -90,6 +92,10 @@ where SFTTrainer internally call Tokenizer's apply_chat_template method to conve
 
    ![image](https://github.com/user-attachments/assets/6f867d93-c81c-48e9-9e0d-86ed679b3f95)
 
+4) Unsloth provides multiple chat formatting check here - https://docs.unsloth.ai/basics/chat-templates so, eventually applying these template you should specify "text" field in SFT trainer
+   as above and eventually model will take care of the things
+
+   ( Note - Padding during the fine-tuning is necessary in multiple cases so please beware of that. And make "Add Generation" to False while training ) 
 
 
 **2) Classification Task**
