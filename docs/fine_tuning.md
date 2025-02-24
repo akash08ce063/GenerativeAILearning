@@ -65,7 +65,7 @@ now, we use the name of field "text" in SFTTrainer argument for training purpose
 ![image](https://github.com/user-attachments/assets/a9c20cc6-b9c6-4b7e-a80e-318e04248b60)
 
 
-**IMPORTANT** - Essentially language mode tranining just take TEXT , now it is matter of how you format the text that defines different tasks, now generally when you are performing a finetuning on the base models, you are free to use any chat template or format for dataset and alpaca from stanford is popular choice. But beware, when finetuning the instruct based model, please follow exactly the model template as it is otherwise it will confuse the model.
+**IMPORTANT** - **Essentially language mode tranining just take TEXT , now it is matter of how you format the text that defines different tasks, now generally when you are performing a finetuning on the base models, you are free to use any chat template or format for dataset and alpaca from stanford is popular choice. But beware, when finetuning the instruct based model, please follow exactly the model template as it is otherwise it will confuse the model**.
 
 so, basically we have three options for the datasets, 
 
