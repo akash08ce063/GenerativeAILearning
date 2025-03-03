@@ -13,3 +13,5 @@ https://huggingface.co/datasets/HuggingFaceTB/cosmopedia
 https://huggingface.co/spaces/argilla/synthetic-data-generator
 
 https://python.langchain.com/v0.2/docs/tutorials/data_generation/
+
+https://github.com/argilla-io/synthetic-data-generator
