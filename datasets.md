@@ -19,3 +19,5 @@ https://github.com/argilla-io/synthetic-data-generator
 https://odsc.medium.com/9-open-source-tools-to-generate-synthetic-data-b642cb10dd9a
 
 gretel - It's pretty good
+
+https://github.com/Azure/azureml-examples/blob/main/sdk/python/foundation-models/system/finetune/Llama-notebooks/datagen/synthetic-data-generation.ipynb
