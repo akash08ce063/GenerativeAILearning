@@ -23,3 +23,5 @@ gretel - It's pretty good
 https://github.com/Azure/azureml-examples/blob/main/sdk/python/foundation-models/system/finetune/Llama-notebooks/datagen/synthetic-data-generation.ipynb
 
 https://github.com/huggingface/huggingface-llama-recipes/blob/main/synthetic_data_gen/synthetic-data-with-llama.ipynb
+
+https://towardsdatascience.com/create-a-synthetic-dataset-using-llama-3-1-405b-for-instruction-fine-tuning-9afc22fb6eef/
