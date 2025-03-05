@@ -21,3 +21,5 @@ https://odsc.medium.com/9-open-source-tools-to-generate-synthetic-data-b642cb10d
 gretel - It's pretty good
 
 https://github.com/Azure/azureml-examples/blob/main/sdk/python/foundation-models/system/finetune/Llama-notebooks/datagen/synthetic-data-generation.ipynb
+
+https://github.com/huggingface/huggingface-llama-recipes/blob/main/synthetic_data_gen/synthetic-data-with-llama.ipynb
