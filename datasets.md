@@ -15,3 +15,5 @@ https://huggingface.co/spaces/argilla/synthetic-data-generator
 https://python.langchain.com/v0.2/docs/tutorials/data_generation/
 
 https://github.com/argilla-io/synthetic-data-generator
+
+https://odsc.medium.com/9-open-source-tools-to-generate-synthetic-data-b642cb10dd9a
